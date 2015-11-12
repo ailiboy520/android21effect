@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android5.0+效果</string>
+    <string name="long_content">在今年的谷歌I/O开发者大会上，谷歌设计部门副总裁马提亚斯·杜亚特向世界各地的开发者们展示了其全新的设计语言Material Design。这个设计在Android 5.0 中首次亮相。率先搭载Lollipop的设备分别是Nexus 6智能手机和Nexus 9平板电脑，这两款设备在上个月月初亮相，而这预示着Material时代正式的到来。\n\t浅谈谷歌全新设计理念Materialdesign
+ “Material”中文译为“材料”，它代表着物质的组成成分，如果放在手机系统设计中，这个词会让人很容易的联想到手机系统的界面风格设 计，比如拟物和扁平风格。不过此次谷歌的Material design并不是一种系统界面设计风格，Material design其实是单纯一种设计语言，它包含了系统界面风格、交互、UI等，此外对于谷歌来说，Material design还有着非常伟大的使命，那就是打造一个横跨所有设备的统一的设计语言，像是手机、桌面端、可穿戴设备等今天就请大家跟随这小编的脚步，来看看 这次谷歌全新设计理念Material design。</string>
+</resources>
