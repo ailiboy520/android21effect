@@ -35,6 +35,15 @@
                 <category android:name="com.android5.0.effect" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".demo.RippleActivity"
+            android:label="水波纹Ripple效果"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android5.0.effect" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

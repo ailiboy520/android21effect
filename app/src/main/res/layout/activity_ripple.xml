@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/darker_gray"
+    tools:context="com.effect.zy.android50effect.demo.RippleActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ripple"
+        android:colorControlHighlight="#ffff0000"
+        android:text="有界"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="无界"
+        android:textColor="@android:color/white" />
+</LinearLayout>
