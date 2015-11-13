@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@android:color/darker_gray"
-    tools:context="com.effect.zy.android50effect.demo.RippleActivity">
+    android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/ripple"
-        android:colorControlHighlight="#ffff0000"
-        android:text="有界"
-        android:textColor="@android:color/white" />
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.effect.zy.android50effect.demo.RippleActivity">
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:text="无界"
-        android:textColor="@android:color/white" />
-</LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ripple_color"
+            android:colorControlHighlight="#ffff0000" />
+
+        <ImageView
+            android:layout_width="269dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_img"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="269dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_shape"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扩散"
+            android:background="@drawable/ripple_color_outside"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+
+</ScrollView>
