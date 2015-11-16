@@ -9,20 +9,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.effect.zy.android50effect.R;
-import com.effect.zy.android50effect.base.BaseActivity;
+import com.effect.zy.android50effect.base.BaseActivityCompat;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
 @ContentView(R.layout.activity_material_dialog)
-public class MaterialDialogActivity extends BaseActivity {
+public class MaterialDialogActivity extends BaseActivityCompat {
 
     @ViewInject(R.id.recyclerView)
     private RecyclerView recyclerView;
@@ -37,7 +36,7 @@ public class MaterialDialogActivity extends BaseActivity {
         // 创建一个线性布局管理器
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-//          设置布局管理器
+        // 设置布局管理器
         recyclerView.setLayoutManager(layoutManager);
 
         // 创建Adapter，并指定数据集
@@ -194,17 +193,7 @@ public class MaterialDialogActivity extends BaseActivity {
                             builder.setTitle("自定义列表").setSingleChoiceItems(adapter, 0, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    Toast.makeText(MaterialDialogActivity.this, String.valueOf(which)+"被点击了", Toast.LENGTH_LONG).show();
-                                }
-                            }).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                                @Override
-                                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                                    Toast.makeText(MaterialDialogActivity.this, String.valueOf(position)+"被点击了(onItemSelected)", Toast.LENGTH_LONG).show();
-                                }
-
-                                @Override
-                                public void onNothingSelected(AdapterView<?> parent) {
-                                    Toast.makeText(MaterialDialogActivity.this, "啥都没选", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(MaterialDialogActivity.this, String.valueOf(which) + "被点击了", Toast.LENGTH_LONG).show();
                                 }
                             }).create().show();
                             break;
@@ -217,17 +206,17 @@ public class MaterialDialogActivity extends BaseActivity {
 
         }
 
-        class MyListAdapter extends BaseAdapter{
+        class MyListAdapter extends BaseAdapter {
 
             String[] arr = null;
 
-            public MyListAdapter(String[] arr){
+            public MyListAdapter(String[] arr) {
                 this.arr = arr;
             }
 
             @Override
             public int getCount() {
-                return arr==null?0:arr.length;
+                return arr == null ? 0 : arr.length;
             }
 
             @Override

@@ -5,9 +5,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.effect.zy.android50effect.demo.ShareViewActivity">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    tools:context="com.effect.zy.android50effect.demo.ViewStateChangedActivity">
+
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:text="btn"
+        android:background="#ff0000"
+        android:stateListAnimator="@anim/state_list_animator"/>
 </RelativeLayout>

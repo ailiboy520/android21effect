@@ -2,11 +2,12 @@ package com.effect.zy.android50effect.base;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 
 import org.xutils.x;
 
-public class BaseActivity extends Activity {
+public class BaseActivityCompat extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

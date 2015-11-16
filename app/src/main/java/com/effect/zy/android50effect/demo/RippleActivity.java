@@ -5,13 +5,13 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.effect.zy.android50effect.R;
-import com.effect.zy.android50effect.base.BaseActivity;
+import com.effect.zy.android50effect.base.BaseActivityCompat;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
 @ContentView(R.layout.activity_ripple)
-public class RippleActivity extends BaseActivity implements View.OnClickListener{
+public class RippleActivity extends BaseActivityCompat implements View.OnClickListener{
 
     @ViewInject(R.id.linearlayout)
     private LinearLayout linearlayout;
