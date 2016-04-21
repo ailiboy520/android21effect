@@ -12,7 +12,6 @@ public class BaseActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i("info","tests");
         x.view().inject(this);
     }
 
