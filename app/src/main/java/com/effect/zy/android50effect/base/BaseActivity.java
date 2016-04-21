@@ -3,6 +3,7 @@ package com.effect.zy.android50effect.base;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 
 import org.xutils.x;
 
@@ -11,6 +12,7 @@ public class BaseActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i("info","tests");
         x.view().inject(this);
     }
 
