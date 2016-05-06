@@ -8,7 +8,7 @@ import android.util.Log;
 import org.xutils.x;
 
 /**
- * Activity 基类.
+ * Activity 基类
  */
 public class BaseActivity extends Activity {
 
