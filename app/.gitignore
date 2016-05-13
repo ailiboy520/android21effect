@@ -16,3 +16,4 @@ gradle.properties
 .gradle
 package.sh
 captures
+misc.xml
